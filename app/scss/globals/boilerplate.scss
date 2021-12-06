@@ -1,0 +1,20 @@
+@use '../utils'as *;
+
+html {
+    font-family: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $font-rubik;
+    background: $very-dark-blue;
+    font-size: rem(18);
+}
