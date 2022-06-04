@@ -1,15 +1,19 @@
-//480px - ipad
-// 768px - small screens
-// 1024px - desktops
-// 1200px - large screens
-$breakpoints-min: ('ipad': 30em,
-    'small': 40em,
-    'medium': 64em,
-    'large': 75em);
+// //480px - ipad
+// // 768px - small screens
+// // 1024px - desktops
+// // 1200px - large screens
+// $breakpoints-min: ('ipad': 30em,
+//     'small': 40em,
+//     'medium': 64em,
+//     'large': 75em);
+
+$breakpoints-max: (
+    'small': 60em
+    );
 
 
-@mixin breakpoint-min($min) {
-    @media (min-width: map-get($breakpoints-min, $min)) {
+@mixin breakpoint-max($max) {
+    @media (max-width: map-get($breakpoints-max, $max)) {
         @content;
     }
 }

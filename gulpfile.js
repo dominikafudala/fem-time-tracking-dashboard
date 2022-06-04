@@ -14,7 +14,7 @@ const babel = require('gulp-babel');
 const terser = require('gulp-terser');
 const browsersync = require('browser-sync').create();
 
-// Sass Task
+// Scss Task
 function scssTask() {
     return src('app/scss/style.scss', {
             sourcemaps: true
